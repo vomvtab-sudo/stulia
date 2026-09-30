@@ -13,13 +13,18 @@ header, footer {
     text-align: center;
 }
 nav ul{
+    display: flex;
     list-style: none;
     padding: 0;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 20px;
+    justify-content: space-evenly;
 }
 nav li{
-    display: inline;
     margin-left: 2%;
     margin-right: 2%;
+    text-align: center;
 }
 a {
     color: #8b4513;
@@ -46,4 +51,7 @@ ul {
 }
 li{
     padding-bottom: 5px;
+}
+#fot{
+    list-style: none;
 }
