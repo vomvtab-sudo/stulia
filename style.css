@@ -6,6 +6,7 @@ body {
     color: #2c2a2a;
     margin: 0;
     padding: 3%;
+    line-height: 1.5;
 }
 header, footer {
     background-color: #f8f1e5;
@@ -54,4 +55,9 @@ li{
 }
 #fot{
     list-style: none;
+}
+.price{
+    font-size: 1.4rem;
+    color: #b5651d;
+    font-weight: 700;
 }
