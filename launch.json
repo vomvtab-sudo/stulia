@@ -1,0 +1,14 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "editor-browser",
+            "request": "launch",
+            "name": "Open index.html",
+            "url": "file:///c%3A/%D0%98%D0%BB%D1%8E%D1%85%D0%B8%D0%BD%2033%20%D0%B3%D1%80/13stylyev/index.html"
+        }
+    ]
+}
