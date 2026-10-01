@@ -61,3 +61,31 @@ li{
     color: #b5651d;
     font-weight: 700;
 }
+#logo {
+    width: 30%;
+    vertical-align: middle;
+}
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 0;
+}
+.gallery-grid img{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    flex: 1 1 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease; 
+}
+.gallery-grid img:hover{
+    transform: scale(1.05);
+}
+figcaption {
+    font-size: 0.9rem;
+    color: #5a3921;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-left: auto;
+}
