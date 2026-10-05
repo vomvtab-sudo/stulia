@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 стульев - мебельный магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="img/logo1.svg" alt="logo" id="logo">
+        <h1 href="top">13 стульев</h1>
+        <p>Мебельный магазин для уютного дома</p>
+        <nav aria-label="Основное меню">
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li class="has-submenu">
+                    <a href="#categories" aria-haspopup="true" aria-expanded="false">Категории</a>
+                    <ul>
+                        <li><a href="#chairs">Стулья и кресла</a></li>
+                        <li><a href="#tables">Столы и столики</a></li>
+                        <li><a href="#sofas">Диваны и кушетки</a></li>
+                        <li><a href="#wardrobes">Шкафы и стеллажи</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#usl" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                    <ul>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Сборка</a></li>
+                        <li><a href="">Индивидуальный заказ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#bestseller">Хиты продаж</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#delivery">Доставка</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="order.html">Заказ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="order-section">
+            <h2>Оформление заказа</h2>
+            <form id="orderForm" action="/submit" method="POST">
+                <fieldset><legend>Контактная информация</legend></fieldset>
+                        <label for="name">
+                            <input type="text" id="name" name="name" required minlength="2">
+                        </label>
+                        <label for="email">
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                        <label for="phone">
+                            <input type="tel" name="phone" id="phone" required pattern="\+7\s?\(?\d(3)\s?\d{3}-?\d{2}-?\d{2}">
+                        </label>
+                <fieldset><legend>Информация о заказе</legend></fieldset>
+                <select name="product" id="product">
+                    <option value="product1">Стул "Венский"</option>
+                    <option value="product2">Кресло "Лофт"</option>
+                    <option value="product3">Стол "Дуб"</option>
+                    <option value="product4">Диван "Скандинавия"</option>
+                    <option value="product5">Шкаф "Классик"</option>
+                </select>
+                <label for="quantity">
+                    <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+                </label>
+                <label for="date">
+                    <input type="date" name="date" id="date">
+                </label>
+                <fieldset><legend>Способ получения</legend></fieldset>
+                <label for="rad-but1">
+                    <input type="radio" name="delivery" id="rad1" value="Самовывоз (ул. Мебельная, 13)">
+                </label>
+                <label for="rad-but2">
+                    <input type="radio" name="delivery" id="rad2" value="Доставка (+500₽ в пределах МКАД)">
+                </label>
+                <fieldset><legend>Дополнительно</legend></fieldset>
+                <label for="">
+                    <textarea name="comments" id="comments" rows="4"></textarea>
+                </label>
+                <label for="">
+                    <input type="file" id="file" name="file" accept="image/*">
+                </label>
+                <label for="">
+                    <input type="text" name="promo" id="promo">
+                </label>
+                <label for="">
+                    <input type="checkbox" required value="Я согласен на обработку персональных данных">
+                </label>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div></div>
+        <p>© 2024 Мебельный магазин «13 стульев»</p>
+        <ul>
+            <li id="fot"><a href="" target="_blank">VK</a></li>
+            <li id="fot"><a href="" target="_blank">Telegram</a></li>
+        </ul>
+        <p><a href="#top">top</a></p>
+    </footer>
+</body>
+</html>
