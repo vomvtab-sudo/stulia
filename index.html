@@ -15,7 +15,23 @@
         <nav aria-label="Основное меню">
             <ul>
                 <li><a href="#about">О нас</a></li>
-                <li><a href="#categories">Категории</a></li>
+                <li class="has-submenu">
+                    <a href="#categories" aria-haspopup="true" aria-expanded="false">Категории</a>
+                    <ul>
+                        <li><a href="#chairs">Стулья и кресла</a></li>
+                        <li><a href="#tables">Столы и столики</a></li>
+                        <li><a href="#sofas">Диваны и кушетки</a></li>
+                        <li><a href="#wardrobes">Шкафы и стеллажи</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#usl" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                    <ul>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Сборка</a></li>
+                        <li><a href="">Индивидуальный заказ</a></li>
+                    </ul>
+                </li>
                 <li><a href="#bestseller">Хиты продаж</a></li>
                 <li><a href="#advantages">Преимущества</a></li>
                 <li><a href="#delivery">Доставка</a></li>
