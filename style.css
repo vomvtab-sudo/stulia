@@ -245,3 +245,106 @@ figcaption {
     border: 5px solid transparent;
     border-bottom-color: #b5651d;    
 }
+#orderForm{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #faf7f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #000;
+}
+fieldset{
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+legend{
+    font-weight: 700;
+    color: #5a3921;
+    padding: 0 8px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #3e2a1e;
+}
+input textarea select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+input:focus textarea:focus select:focus{
+    outline: none;
+    border-color: #b5651d;
+    box-shadow: 0 0 0 3px rgba(181, 101, 20, 0.15);
+}
+textarea{
+    resize: vertical;
+    min-width: 100px;
+    max-width: 90%;
+}
+#rad1 #rad2 #checkb {
+    width: auto;
+    margin-right: 8px;
+    margin-bottom: 0;
+}
+.radio-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+#rad-but1 #rad-but2{
+    display: flex;
+    align-items: center;
+}
+.order-btn{
+    padding: 12px 24px;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.reset-btn{
+    padding: 12px 24px;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.order-btn{
+    background: #b5651d;
+    color: white;
+    margin-right: 10px;
+}
+.order-btn:hover{
+    background: #d35400;
+}
+.reset-btn{
+    background: #e0e0e0;
+    color: #3e2a1e;
+}
+.reset-btn:hover{
+    background: #d0d0d0;
+}
+button:required:valid{
+    border-color: #6b8e23;
+    content: " *";
+    color: #6b8e23;
+}
+button:required:invalid:not(:placeholder-shown){
+    border-color: #c0392b;
+}
+fieldset > label::after{
+    content: " *";
+    color: #c0392b;
+}

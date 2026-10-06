@@ -45,17 +45,18 @@
         <section class="order-section">
             <h2>Оформление заказа</h2>
             <form id="orderForm" action="/submit" method="POST">
-                <fieldset><legend>Контактная информация</legend></fieldset>
+                <fieldset><legend>Контактная информация</legend>
                         <label for="name">
-                            <input type="text" id="name" name="name" required minlength="2">
+                            <input type="text" id="name" name="name" required minlength="2" placeholder="Имя">
                         </label>
                         <label for="email">
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required placeholder="Эл. Почта">
                         </label>
                         <label for="phone">
-                            <input type="tel" name="phone" id="phone" required pattern="\+7\s?\(?\d(3)\s?\d{3}-?\d{2}-?\d{2}">
+                            <input type="tel" name="phone" id="phone" required pattern="\+7\s?\(?\d(3)\s?\d{3}-?\d{2}-?\d{2}" placeholder="Телефон">
                         </label>
-                <fieldset><legend>Информация о заказе</legend></fieldset>
+                        </fieldset>
+                <fieldset><legend>Информация о заказе</legend>
                 <select name="product" id="product">
                     <option value="product1">Стул "Венский"</option>
                     <option value="product2">Кресло "Лофт"</option>
@@ -69,26 +70,36 @@
                 <label for="date">
                     <input type="date" name="date" id="date">
                 </label>
-                <fieldset><legend>Способ получения</legend></fieldset>
-                <label for="rad-but1">
-                    <input type="radio" name="delivery" id="rad1" value="Самовывоз (ул. Мебельная, 13)">
+                    </fieldset>
+                <fieldset><legend>Способ получения</legend>
+                <div class="radio-group">
+                <label for="rad-but1" id="rad-but1">
+                    <input type="radio" name="delivery" id="rad1">
+                    Самовывоз (ул. Мебельная, 13)
                 </label>
-                <label for="rad-but2">
-                    <input type="radio" name="delivery" id="rad2" value="Доставка (+500₽ в пределах МКАД)">
+                <label for="rad-but2" id="rad-but2">
+                    <input type="radio" name="delivery" id="rad2">
+                    Доставка (+500₽ в пределах МКАД)
                 </label>
-                <fieldset><legend>Дополнительно</legend></fieldset>
+                </div>
+                </fieldset>
+                <fieldset><legend>Дополнительно</legend>
                 <label for="">
-                    <textarea name="comments" id="comments" rows="4"></textarea>
+                    <textarea name="comments" id="comments" rows="4" placeholder="Комментарий к заказу"></textarea>
                 </label>
                 <label for="">
-                    <input type="file" id="file" name="file" accept="image/*">
+                    <input type="file" id="file" name="file" accept="image/*" placeholder="Добавить файл">
                 </label>
                 <label for="">
-                    <input type="text" name="promo" id="promo">
+                    <input type="text" name="promo" id="promo" placeholder="Промокод">
                 </label>
                 <label for="">
-                    <input type="checkbox" required value="Я согласен на обработку персональных данных">
+                    <input type="checkbox" id="checkb" required>
+                    Я согласен на обработку персональных данных
                 </label>
+                </fieldset>
+                <button type="submit" class="order-btn">Оформить заказ</button>
+                <button type="submit" class="reset-btn">Очистить форму</button>
             </form>
         </section>
     </main>
