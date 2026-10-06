@@ -74,60 +74,38 @@
         </section>
         <section id="categories">
             <h2>Категории</h2>
-                <div>
-                    <h3>Стулья и кресла</h3>
-                    <ul>
-                        <li>Обеденные стулья</li>
-                        <li>Кресла для отдыха</li>
-                        <li>Барные и кухонные стулья</li>
-                        <li>Акцентные стулья</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Столы и столики</h3>
-                    <ul>
-                        <li>Обеденные столы</li>
-                        <li>Журнальные и кофейные столики</li>
-                        <li>Консоли и придиванные столики</li>
-                        <li>Письменные и компьютерные столы</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Диваны и кушетки</h3>
-                    <ul>
-                        <li>Прямые диваны</li>
-                        <li>Угловые диваны</li>
-                        <li>Кушетки, софы и тахты</li>
-                        <li>Диваны-кровати и кресла-кровати</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Шкафы и стеллажи</h3>
-                    <ul>
-                        <li>Платяные шкафы</li>
-                        <li>Книжные и модульные стеллажи</li>
-                        <li>Буфеты, витрины и серванты</li>
-                        <li>Комоды, тумбы и консольные системы хранения</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Кровати</h3>
-                    <ul>
-                        <li>Классические кровати с изголовьем</li>
-                        <li>Подиумные кровати и кровати-платформы</li>
-                        <li>Кровати с подъемным механизмом</li>
-                        <li>Детские кроватки</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Мебель для офиса</h3>
-                    <ul>
-                        <li>Кресла эргономичные</li>
-                        <li>Офисные столы и перегородки</li>
-                        <li>Стойки ресепшен и офисные диваны</li>
-                        <li>Системы хранения для документов</li>
-                    </ul>
-                </div>
+            <div class="categories-grid">
+                <article class="category-card">
+                    <img src="img/min/tov1.webp" alt="Категория стулья">
+                    <h3>Стулья</h3>
+                    <p>Стулья на любой вкус и цвет!</p>
+                </article>
+                <article class="category-card">
+                    <img src="img/min/tov2-compressed.webp" alt="категория диваны">
+                    <h3>Диваны</h3>
+                    <p>Диваны на любой вкус и цвет!</p>
+                </article>
+                <article class="category-card">
+                    <img src="img/min/tov3-compressed.webp" alt="Категория столы">
+                    <h3>Столы</h3>
+                    <p>Столы на любой вкус и цвет!</p>
+                </article>
+                <article class="category-card">
+                    <img src="img/min/tov5-compressed.webp" alt="категория шкафы">
+                    <h3>Шкафы</h3>
+                    <p>Шкафы на любой вкус и цвет!</p>
+                </article>
+                <article class="category-card">
+                    <img src="img/min/tov3-compressed.webp" alt="Категория столы">
+                    <h3>Столы</h3>
+                    <p>Столы на любой вкус и цвет!</p>
+                </article>
+                <article class="category-card">
+                    <img src="img/min/tov5-compressed.webp" alt="категория шкафы">
+                    <h3>Шкафы</h3>
+                    <p>Шкафы на любой вкус и цвет!</p>
+                </article>
+            </div>
         </section>
         <section id="bestseller">
             <h2>Хиты продаж</h2>
@@ -152,7 +130,7 @@
             <div class="products-grid">
                 <article class="product-card">
                     <div class="badge">Хит!</div>
-                    <img src="img/min/tov1-compressed.webp" alt="prod-grid1" class="product-image">
+                    <img src="img/min/tov1.webp" alt="prod-grid1" class="product-image">
                     <div class="product-content">
                         <h3 class="product-title">Стул "Венский"</h3>
                         <p class="product-description">Стул "Венский" Вес: 5.45 кг Идеально смотрится на фоне интерьера Old old school</p>
@@ -177,7 +155,7 @@
                     <img src="img/min/tov3-compressed.webp" alt="prod-grid1" class="product-image">
                     <div class="product-content">
                         <h3 class="product-title">Стол "Дуб"</h3>
-                        <p class="product-description">Стол "Дуб" Каждый такой стол был вырезан из одного дерева дуба, именно из за этого он является очень надежным</p>
+                        <p class="product-description">Стол "Дуб" Каждый такой стол был вырезан из одного цельного дерева дуба</p>
                         <div class="product-footer">
                             <span class="price">53 600 ₽</span>
                             <button class="buy-btn">В корзину</button>
@@ -259,8 +237,7 @@
             <h2>Наша продукция</h2>
             <div class="gallery-grid">
                 <figure>
-                    <img src="img/min/tov1-compressed.webp"
-                    srcset="img/max/tov1.webp"
+                    <img src="img/min/tov1.webp"
                     sizes="(max-width: 600px) 100vw, 50vw" 
                     alt="Стул венский"
                     loading="lazy">
@@ -364,6 +341,19 @@
             </div>
         </section>
     </main>
+    <aside class="sidebar">
+        <h3>Фильтры</h3>
+        <ul>
+            <li>Стулья</li>
+            <li>Столы</li>
+            <li>Диваны</li>
+            <li>Шкафы</li>
+        </ul>
+        <h3>Цена</h3>
+        <input type="number" name="price-filter" id="price-filter">
+        <input type="number" name="price-filter" id="price-filter">
+        <button class="filter-btn">Применить</button>
+    </aside>
     <footer>
         <div></div>
         <p>© 2024 Мебельный магазин «13 стульев»</p>
@@ -371,7 +361,7 @@
             <li id="fot"><a href="" target="_blank">VK</a></li>
             <li id="fot"><a href="" target="_blank">Telegram</a></li>
         </ul>
-        <p><a href="#top">top</a></p>
     </footer>
+    <a href="#top" class="back-to-top" aria-label="Наверх">↑</a>
 </body>
 </html>
