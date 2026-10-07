@@ -69,6 +69,16 @@ nav ul{
     gap: 20px;
     justify-content: center;
 }
+.nave ul{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    list-style: none;
+    padding: 0;
+    background-color: #f5f5f5;
+    margin: 10px 0 0;
+    padding: 0;
+    gap: 20px;
+}
 nav li{
     margin-left: 2%;
     margin-right: 2%;
