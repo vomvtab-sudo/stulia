@@ -9,9 +9,16 @@
 </head>
 <body>
     <header>
-        <img src="img/logo1.svg" alt="logo" id="logo">
-        <h1 href="top">13 стульев</h1>
-        <p>Мебельный магазин для уютного дома</p>
+        <div class="header-top">
+            <a class="logo" href="#top"><img src="img/logo1.svg" alt="logo"></a>
+            <form action="" class="search-form">
+                <input type="search" name="search" id="search-inp"><button>Найти</button>
+            </form>
+            <div class="header-actions">
+                <a href="order.html">Корзина</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
         <nav aria-label="Основное меню">
             <ul>
                 <li><a href="#about">О нас</a></li>
@@ -76,7 +83,7 @@
             <h2>Категории</h2>
             <div class="categories-grid">
                 <article class="category-card">
-                    <img src="img/min/tov1.webp" alt="Категория стулья">
+                    <img src="img/max/tov1.webp" alt="Категория стулья">
                     <h3>Стулья</h3>
                     <p>Стулья на любой вкус и цвет!</p>
                 </article>
@@ -130,7 +137,7 @@
             <div class="products-grid">
                 <article class="product-card">
                     <div class="badge">Хит!</div>
-                    <img src="img/min/tov1.webp" alt="prod-grid1" class="product-image">
+                    <img src="img/max/tov1.webp" alt="prod-grid1" class="product-image">
                     <div class="product-content">
                         <h3 class="product-title">Стул "Венский"</h3>
                         <p class="product-description">Стул "Венский" Вес: 5.45 кг Идеально смотрится на фоне интерьера Old old school</p>
@@ -237,7 +244,7 @@
             <h2>Наша продукция</h2>
             <div class="gallery-grid">
                 <figure>
-                    <img src="img/min/tov1.webp"
+                    <img src="img/max/tov1.webp"
                     sizes="(max-width: 600px) 100vw, 50vw" 
                     alt="Стул венский"
                     loading="lazy">
@@ -279,15 +286,38 @@
         </section>
         <section id="advantages">
             <h2>Преимущества</h2>
-            <ul>
-                <li>Мебель, которая живет десятилетиями!</li>
-                <li>Настоящий комфорт</li>
-                <li>Эксклюзивные коллекции</li>
-                <li>Умная эргономика для реальной жизни</li>
-                <li>Прозрачные условия и честная гарантия</li>
-                <li>Жизнь мебели после покупки</li>
-                <li>Возможность познакомиться с мебелью лично</li>
-            </ul>
+            <div class="advantages-grid">
+                <div class="advantage">
+                    <span class="advantage-icon">&#129321</span>
+                    <h3>Настоящий комфорт</h3>
+                    <p>Премиальные материалы и новейшие технологии делают нашу мебель по настощиму удобной!</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-icon">&#9889</span>
+                    <h3>Эксклюзивные коллекции</h3>
+                    <p>Регулярно выпускаем лимитированные коллекции в честь различных событий!</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-icon">&#128526</span>
+                    <h3>Умная эргономика для реальной жизни</h3>
+                    <p>Все детали эргономики были созданы учитывая реальные потребности клиентов!</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-icon">&#129323</span>
+                    <h3>Прозрачные условия</h3>
+                    <p>Честная рассрочка от 4 до 12 месяцев!</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-icon">&#128521</span>
+                    <h3>Жизнь мебели полсе покупки</h3>
+                    <p>Если после покупки мебель сломается, мы без проблем починим ее по гарантии!</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-icon">&#128064</span>
+                    <h3>Возможность познакомиться с мебелью лично</h3>
+                    <p>Большое количество оффлайн магазинов повсей стране позволяют приехать и лично выбрать мебель!</p>
+                </div>
+            </div>
         </section>
         <section id="delivery">
             <h2>Доставка и оплата</h2>
@@ -355,12 +385,25 @@
         <button class="filter-btn">Применить</button>
     </aside>
     <footer>
-        <div></div>
-        <p>© 2024 Мебельный магазин «13 стульев»</p>
-        <ul>
-            <li id="fot"><a href="" target="_blank">VK</a></li>
-            <li id="fot"><a href="" target="_blank">Telegram</a></li>
-        </ul>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>Контакты и списки с адресом, телефоном, email</h3>
+
+            </div>
+            <div class="footer-col">
+                <h3>Категории и список ссылок на категории</h3>
+                <a href="#categories">Стулья</a>
+                <a href="#categories">Столы</a>
+                <a href="#categories">Диваны</a>
+                <a href="#categories">Шкафы</a>
+            </div>
+            <div class="footer-col">
+                <h3>Мы в соцсетях и список ссылок на соцсети</h3>
+                <a href="https://vk.ru/">VK</a>
+                <a href="https://telegram.org/">Telegram</a>
+            </div>
+        </div>
+        <p>© 2026 Мебельный магазин «13 стульев»</p>
     </footer>
     <a href="#top" class="back-to-top" aria-label="Наверх">↑</a>
 </body>
