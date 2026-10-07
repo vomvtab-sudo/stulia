@@ -9,9 +9,16 @@
 </head>
 <body>
     <header>
-        <img src="img/logo1.svg" alt="logo" id="logo">
-        <h1 href="top">13 стульев</h1>
-        <p>Мебельный магазин для уютного дома</p>
+        <div class="header-top">
+            <a class="logo" href="#top"><img src="img/logo1.svg" alt="logo"></a>
+            <form action="" class="search-form">
+                <input type="search" name="search" id="search-inp"><button>Найти</button>
+            </form>
+            <div class="header-actions">
+                <a href="order.html">Корзина</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
         <nav aria-label="Основное меню">
             <ul>
                 <li><a href="#about">О нас</a></li>
@@ -106,12 +113,25 @@
         </section>
     </main>
     <footer>
-        <div></div>
-        <p>© 2024 Мебельный магазин «13 стульев»</p>
-        <ul>
-            <li id="fot"><a href="" target="_blank">VK</a></li>
-            <li id="fot"><a href="" target="_blank">Telegram</a></li>
-        </ul>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>Контакты и списки с адресом, телефоном, email</h3>
+
+            </div>
+            <div class="footer-col">
+                <h3>Категории и список ссылок на категории</h3>
+                <a href="#categories">Стулья</a>
+                <a href="#categories">Столы</a>
+                <a href="#categories">Диваны</a>
+                <a href="#categories">Шкафы</a>
+            </div>
+            <div class="footer-col">
+                <h3>Мы в соцсетях и список ссылок на соцсети</h3>
+                <a href="https://vk.ru/">VK</a>
+                <a href="https://telegram.org/">Telegram</a>
+            </div>
+        </div>
+        <p>© 2026 Мебельный магазин «13 стульев»</p>
     </footer>
 </body>
 </html>
