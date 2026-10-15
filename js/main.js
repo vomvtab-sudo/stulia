@@ -1,3 +1,4 @@
+// ||||||||||||||||||||||| 1 практика |||||||||||||||||||||||
 "use strict";
 /* //=========Объявление переменных===============
 let visitorCount = 0;
@@ -138,3 +139,32 @@ console.log(Calculator(price, value, skidka, name));
 
 */
 
+// ||||||||||||||||||||||| 2 практика |||||||||||||||||||||||
+
+const order = {
+    product: 'Стул "Венский" ',
+    price: 3490,
+    quantity: 3,
+    discount: 10,
+    delivery: 500,
+}
+
+function processOrder(obj){
+
+    let summa = obj.price * obj.quantity;
+    let skidka = summa - (summa *  (obj.discount * 0.09));
+    let summask = summa - skidka;
+    let total = summask + obj.delivery;
+
+    console.log(
+        `\n Заказ: \t\t\t ${obj.product}`,
+        `\n Количество: \t\t ${(obj.quantity).toFixed(0)} шт`,
+        `\n Сумма без скидки: \t ${summa.toFixed(2)}₽`,
+        `\n Скидка ${obj.discount}%:  \t\t ${skidka.toFixed(2)}₽`,
+        `\n Сумма со скидкой: \t ${summask.toFixed(2)}₽`,
+        `\n Доставка: \t\t\t ${(obj.delivery).toFixed(2)}₽`,
+        `\n Итого к оплате: \t ${total.toFixed(2)}₽`
+    );
+}
+
+processOrder(order);
