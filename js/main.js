@@ -141,6 +141,7 @@ console.log(Calculator(price, value, skidka, name));
 
 // ||||||||||||||||||||||| 2 практика |||||||||||||||||||||||
 
+/*
 const order = {
     product: 'Стул "Венский" ',
     price: 3490,
@@ -168,3 +169,73 @@ function processOrder(obj){
 }
 
 processOrder(order);
+*/
+
+// ||||||||||||||||||||||| 3 практика |||||||||||||||||||||||
+
+/* const products = [
+    {id: 1, name: "Стул 'Венский'", price: 3490, category: 'chairs', inStock: true},
+    {id: 2, name: "Кресло 'Лофт'", price: 8900, category: 'chairs', inStock: true},
+    {id: 3, name: "Стол 'Дуб'", price: 24500, category: 'tables', inStock: false},
+    {id: 4, name: "Диван 'Скандинавия'", price: 34900, category: 'sofas', inStock: true},
+    {id: 5, name: "Шкаф 'Классик'", price: 19900, category: 'wordrobes', inStock: true},
+    {id: 6, name: "Журнальный столик 'Стекло'", price: 5900, category: 'tables', inStock: true}
+];
+console.log(products.slice(0));
+console.log(products.every(p => p.inStock));
+
+*/
+//Function for practice Arrays
+/*
+const products = [
+        {id: 1, name: "Стул 'Венский'", price: 3490, category: 'chairs', inStock: true},
+    {id: 2, name: "Кресло 'Лофт'", price: 8900, category: 'chairs', inStock: true},
+    {id: 3, name: "Стол 'Дуб'", price: 24500, category: 'tables', inStock: false},
+    {id: 4, name: "Диван 'Скандинавия'", price: 34900, category: 'sofas', inStock: true},
+    {id: 5, name: "Шкаф 'Классик'", price: 19900, category: 'wordrobes', inStock: true},
+    {id: 6, name: "Журнальный столик 'Стекло'", price: 5900, category: 'tables', inStock: true},
+];
+function buildCatalogReport(array){
+    const totalCount = array.length;
+    const totalPrice = array.reduce((acc, p) => acc + p.price, 0);
+    const averagePrice = totalPrice / array.length;
+    const byCategory = {
+        chairs: array.filter(u => u.category == 'chairs').length,
+        tables: array.filter(u => u.category =='tables').length,
+        sofas: array.filter(u => u.category == 'sofas').length,
+        wordrobes: array.filter(u => u.category == 'wordrobes').length,
+    };
+    const hasOutOfStock = array.some((item) => item.inStock === false);
+    const available = array.sort((a, b) => b.price - a.price).filter((item) => item.inStock == true).map(u => u.name);
+    const mostExpensive = array.sort((a, b) => a.price - b.price);
+    console.log("Всего товаров: \t\t" + totalCount);
+    console.log("\n Общая стоимость товаров: \t\t" + totalPrice);
+    console.log("\n Средняя цена товаров: \t\t" + averagePrice);
+    console.log("\n Количество товаров по категориям: \t\t\n Стулья: \t" + byCategory.chairs + "\n Шкафы: \t" + byCategory.tables + "\n Диваны: \t" + byCategory.sofas + "\n Шкафы-купе: \t" + byCategory.wordrobes);
+    console.log("\n Товары в наличии: \t\t" + available);
+    console.log("\n Самый дорогой товар: \t\t" + mostExpensive.map(u => u.name).slice(-1) + "\t" + mostExpensive.map(u => u.price).slice(-1));
+    console.log("Есть ли хотя бы один товар не в наличии?\t\t" + hasOutOfStock); 
+}
+buildCatalogReport(products);
+*/
+
+
+const products = [
+        {id: 1, name: "Стул 'Венский'", price: 3490, category: 'chairs', discount: 10, inStock: true},
+    {id: 2, name: "Кресло 'Лофт'", price: 8900, category: 'chairs', discount: 10, inStock: true},
+    {id: 3, name: "Стол 'Дуб'", price: 24500, category: 'tables', discount: 10, inStock: false},
+    {id: 4, name: "Диван 'Скандинавия'", price: 34900, category: 'sofas', discount: 10, inStock: true},
+    {id: 5, name: "Шкаф 'Классик'", price: 19900, category: 'wordrobes', discount: 10, inStock: true},
+    {id: 6, name: "Журнальный столик 'Стекло'", price: 5900, category: 'tables', discount: 10, inStock: true},
+];
+function renderProductCard(product){
+    if(product.inStock == true){
+        product.inStock = "В наличии!";
+    }
+    else {
+        product.inStock = "Нет в наличии!";
+    }
+    document.getElementById('target').insertAdjacentHTML('beforeend', ` <article class="product-card"> <h3>${product.name}</h3> <span class="price">${product.price} ₽</span> <span class="category">${product.category}</span> <span class="discount">${product.discount}%</span> <span class="stock">${product.inStock}</span> </article> `);
+}
+renderProductCard(products[3]);
+   
