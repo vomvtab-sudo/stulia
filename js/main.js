@@ -1,5 +1,5 @@
 // ||||||||||||||||||||||| 1 практика |||||||||||||||||||||||
-"use strict";
+'use strict';
 /* //=========Объявление переменных===============
 let visitorCount = 0;
 const shopName = '13 стульев';
@@ -219,7 +219,8 @@ function buildCatalogReport(array){
 buildCatalogReport(products);
 */
 
-
+// ||||||||||||||||||||||| 4 практика |||||||||||||||||||||||
+/*
 const products = [
         {id: 1, name: "Стул 'Венский'", price: 3490, category: 'chairs', discount: 10, inStock: true},
     {id: 2, name: "Кресло 'Лофт'", price: 8900, category: 'chairs', discount: 10, inStock: true},
@@ -238,4 +239,31 @@ function renderProductCard(product){
     document.getElementById('target').insertAdjacentHTML('beforeend', ` <article class="product-card"> <h3>${product.name}</h3> <span class="price">${product.price} ₽</span> <span class="category">${product.category}</span> <span class="discount">${product.discount}%</span> <span class="stock">${product.inStock}</span> </article> `);
 }
 renderProductCard(products[3]);
-   
+
+*/
+
+// ||||||||||||||||||||||| 5 практика |||||||||||||||||||||||
+
+/*
+const prod1 = {
+    name: 'Стул «Венский»',
+    price: 3490,
+    category: 'chairs',
+    inStock: true,
+    discount: 10,
+    tags: 'дерево, классика, кухня',
+};
+function buildProductURL(product){
+    const stockURL = "https://13stylyev.ru/catalog/";
+    const categor = String(product.category).trimEnd();
+    const name = String(product.name).trim(); 
+    console.log(`${stockURL}${categor}/${name}`.toLowerCase().replace(/\s+/g, '-'));
+    return ""; 
+}
+console.log(buildProductURL(prod1));
+
+*/
+
+// ||||||||||||||||||||||| 6 практика |||||||||||||||||||||||
+
+
