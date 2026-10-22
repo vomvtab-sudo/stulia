@@ -266,7 +266,7 @@ console.log(buildProductURL(prod1));
 
 // ||||||||||||||||||||||| 7 практика |||||||||||||||||||||||
 
-
+/* 
 function createCart() {
 
     const items = [];
@@ -390,7 +390,54 @@ function removeFromCartA() {
     }
 
     renderCart(cartA, outputA);
-    
+
 }
 
 renderCart(cartA, outputA);
+*/
+
+// ||||||||||||||||||||||| 8 практика |||||||||||||||||||||||
+
+/*
+console.log('Start');
+setTimeout(() => {
+    console.log('timer: 0')
+}, 10000);
+console.log('the end');
+*/
+function wait(ms) {
+    
+    return new Promise((resolve) => { 
+        
+        setTimeout(() => { 
+            
+            console.log('Прошло ' + ms + ' мс'); 
+            resolve('Готово');
+
+        }, ms);
+
+    }); 
+
+} 
+
+wait(1000).then(value => { 
+    
+    console.log(value);  
+
+});
+
+function failAfter(ms){
+
+    return new Promise((resolve) => {
+
+        setTimeout(() => {
+
+            resolve('Ok!');
+
+        }, ms);
+
+    });
+
+}
+
+failAfter(-123).then(value => console.log(value)).catch(error => console.error(error));
