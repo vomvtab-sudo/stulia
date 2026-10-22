@@ -264,6 +264,133 @@ console.log(buildProductURL(prod1));
 
 */
 
-// ||||||||||||||||||||||| 6 практика |||||||||||||||||||||||
+// ||||||||||||||||||||||| 7 практика |||||||||||||||||||||||
 
 
+function createCart() {
+
+    const items = [];
+
+    const findItemIndex = (id) => items.findIndex(item => item.id === id);
+
+    return {
+
+        addItem(product) {
+
+            const itemWithId = { ...product, id: product.id || Date.now() };
+            items.push(itemWithId);
+            return itemWithId.id;
+
+        },
+
+        removeItem(id) {
+
+            const index = findItemIndex(id);
+            if (index !== -1) {
+
+                items.splice(index, 1);
+                return true;
+
+            }
+
+            return false;
+
+        },
+
+        getItems() {
+
+            return [...items];
+
+        },
+
+        getTotal() {
+
+            return items.reduce((sum, item) => sum + (item.price || 0), 0);
+
+        },
+
+        getCount() {
+
+            return items.length;
+
+        }
+
+    };
+
+}
+
+const cartA = createCart();
+const cartB = createCart();
+
+const outputA = document.getElementById('outputA');
+const outputB = document.getElementById('outputB');
+const actionLog = document.getElementById('actionLog');
+
+function renderCart(cart, elementId) {
+
+    const items = cart.getItems();
+    const total = cart.getTotal();
+    const count = cart.getCount();
+    
+    const displayText = `Количество товаров: ${count}
+    Суммарная стоимость: ${total} руб.
+    Содержимое корзины:
+    ${items.length > 0 ? JSON.stringify(items, null, 2) : 'Корзина пуста'}`;
+
+    elementId.textContent = displayText;
+
+}
+
+function logAction(message) {
+
+    const time = new Date().toLocaleTimeString();
+    actionLog.textContent = `[${time}] ${message}\n` + actionLog.textContent;
+
+}
+
+function addToCartA() {
+
+    const name = document.getElementById('productNameA').value;
+    const price = parseFloat(document.getElementById('productPriceA').value);
+
+    if (!name || isNaN(price) || price <= 0) {
+
+        alert('Введите корректные название и цену для корзины A');
+        return;
+
+    }
+
+    const id = cartA.addItem({ name, price });
+    logAction(`Товар "${name}" (ID: ${id}) добавлен в корзину A.`);
+    renderCart(cartA, outputA);
+    
+    document.getElementById('productNameA').value = '';
+    document.getElementById('productPriceA').value = '';
+
+}
+
+function removeFromCartA() {
+
+    const id = parseInt(document.getElementById('removeIdA').value);
+    if (isNaN(id)) {
+
+        alert('Введите ID товара для удаления из A');
+        return;
+
+    }
+
+    if (cartA.removeItem(id)) {
+
+        logAction(`Товар с ID ${id} удален из корзины A.`);
+
+    } else {
+
+        logAction(`Товар с ID ${id} не найден в корзине A.`);
+
+    }
+
+    renderCart(cartA, outputA);
+    
+}
+
+renderCart(cartA, outputA);

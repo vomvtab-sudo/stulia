@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзины</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cart-panel">
+            <h2>Корзина 1</h2>
+            <div class="form-group">
+                <label for="productNameA">Название товара:</label>
+                <input type="text" id="productNameA" placeholder="Например: Стол">
+            </div>
+            <div class="form-group">
+                <label for="productPriceA">Цена:</label>
+                <input type="number" id="productPriceA" placeholder="500" min="0">
+            </div>
+            <button onclick="addToCartA()">Добавить в корзину </button>
+
+            <div class="form-group" style="margin-top: 20px;">
+                <label for="removeIdA">ID товара для удаления:</label>
+                <input type="number" id="removeIdA" placeholder="1">
+            </div>
+            <button onclick="removeFromCartA()" class="danger">Удалить из корзины</button>
+            <div class="output" id="outputA"></div>
+        </div>
+    <div class="log" id="actionLog"></div>
+<script src="js/main.js" defer>
+</script>
+</body>
+</html>
