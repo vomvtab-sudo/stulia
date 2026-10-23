@@ -404,7 +404,9 @@ setTimeout(() => {
     console.log('timer: 0')
 }, 10000);
 console.log('the end');
-*/
+
+
+
 function wait(ms) {
     
     return new Promise((resolve) => { 
@@ -441,3 +443,80 @@ function failAfter(ms){
 }
 
 failAfter(-123).then(value => console.log(value)).catch(error => console.error(error));
+
+function fetchUser(){
+
+    return new Promise((resolve, reject) => {
+
+        setTimeout(() => {
+
+            resolve({
+
+                id: 1,
+                name: 'Anna',
+
+            });
+
+        }, 500);
+
+    });
+
+}
+
+function fetchOrder(userid){
+
+    return new Promise((resolve) => {
+
+        setTimeout(() => {
+
+            resolve(
+
+                [{
+
+                    id: 101,
+                    total: 10470,
+
+                }]
+
+            );
+
+        }, 500);
+
+    });
+
+}
+
+function fetchOrderDetails(orderid){
+
+    return new Promise((resolve) => {
+
+        setTimeout(() => {
+
+            resolve(
+
+                {
+
+                    id: orderid,
+                    items: ['Стул', 'Стол'],
+
+                }
+
+            );
+
+        }, 500);
+
+    });
+
+}
+
+fetchUser()
+.then(user => fetchOrder(user))
+.then(orders => fetchOrderDetails(orders))
+.then(details => console.log(details))
+.catch(error => console.log(error))
+.finally(() => console.log('Загрузка завершена'));
+
+*/
+
+// ||||||||||||||||||||||| 9 практика |||||||||||||||||||||||
+
