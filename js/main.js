@@ -520,3 +520,69 @@ fetchUser()
 
 // ||||||||||||||||||||||| 9 практика |||||||||||||||||||||||
 
+/*
+const product = {
+
+    id: 1,
+    name: "stul",
+    price: 9000,
+    inStock: true,
+    tags: "sdak"
+
+}
+
+const json = JSON.stringify(product);
+console.log(json, typeof(json));
+
+const products = [
+
+    {
+
+    id: 1,
+    name: "stul",
+    price: 9000
+
+    },
+    {
+
+    id: 2,
+    name: "stul",
+    price: 9000
+
+    },
+    {
+
+    id: 3,
+    name: "stul",
+    price: 9000
+
+    }
+
+]
+
+const jsonn = JSON.stringify(products, null, 2);
+console.log(jsonn, typeof(jsonn));
+
+const ojson = '{"id":1,"name":"stul","price":9000}';
+console.log(JSON.parse(ojson).name);
+
+const ajson = '{"id":1,"name":"stul",price:9000}';
+
+try{
+
+    console.log(JSON.parse(ajson).name);
+
+}
+catch(error){
+
+    console.log(error.name);
+    console.log(error.message);
+
+}
+
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.log(error.name));
+
+*/
