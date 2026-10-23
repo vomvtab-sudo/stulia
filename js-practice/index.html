@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 стульев - мебельный магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a class="logo" href="#top"><img src="img/logo1.svg" alt="logo"></a>
+            <form action="" class="search-form">
+                <input type="search" name="search" id="search-inp"><button>Найти</button>
+            </form>
+            <div class="header-actions">
+                <a href="order.html">Корзина</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
+        <nav aria-label="Основное меню">
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li class="has-submenu">
+                    <a href="catalog.html" aria-haspopup="true" aria-expanded="false">Категории</a>
+                    <ul>
+                        <li><a href="#chairs">Стулья и кресла</a></li>
+                        <li><a href="#tables">Столы и столики</a></li>
+                        <li><a href="#sofas">Диваны и кушетки</a></li>
+                        <li><a href="#wardrobes">Шкафы и стеллажи</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#usl" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                    <ul>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Сборка</a></li>
+                        <li><a href="">Индивидуальный заказ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#bestseller">Хиты продаж</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#delivery">Доставка</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="order.html">Заказ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <div>
+            <h2>О нас</h2>
+            <p>
+                Всё началось не с бизнес-плана, а с одного старого венского стула.
+
+                Наш основатель, Михаил, нашел его на пыльном чердаке старой дачи под Звенигородом. Стул был безнадежно расшатан, с выцветшей обивкой и царапинами на спинке. Вместо того чтобы выбросить его, Михаил отнес находку к реставратору. Через неделю из мастерской вернулся не просто предмет мебели, а настоящий член семьи — со своим характером, историей и невероятным уютом.
+
+                Именно тогда, сидя на этом самом стуле с чашкой крепкого чая, Михаил понял: дом — это не стены и не планировка. Дом — это то, на чем мы сидим, где читаем по вечерам и куда возвращаемся после тяжелого дня.
+
+                Так в 2012 году в небольшом полуподвальном помещении на Патриарших прудах появился магазин «13 стульев».
+            </p>
+            </div>
+            <div>
+            <h3>Наши принципы</h3>
+            <ul>
+                <li>Качество</li>
+                <li>Честность</li>
+                <li>Забота</li>
+                <li>Ответственность</li>
+            </ul>
+            </div>
+            <div>
+            <h3>Наша команда</h3>
+            <p>
+                За каждым нашим диваном, комодом и тем самым тринадцатым стулом стоят люди, для которых мебель — это не просто работа, а настоящее призвание. В «13 стульях» нет случайных продавцов. Наш старший консультант, Елена, по первому образованию — искусствовед, и она с закрытыми глазами отличит подлинный датский модернизм от современной реплики. Мастер-технолог Андрей может на слух определить плотность пенополиуретана в матрасе, а дизайнер Ирина помнит габариты каждой выставочной модели и способна вписать огромный угловой диван в самую крошечную студию. Мы не используем скрипты и не ставим планы по продажам. Наша главная задача — услышать вас. Поэтому, когда вы приходите к нам, вы общаетесь с экспертами и немного мечтателями, которые искренне хотят, чтобы в вашем доме стало на один по-настоящему любимый предмет больше. Мы часто шутим, что наш коллектив — это как раз те самые «13 стульев»: каждый со своим характером, но вместе мы создаем идеальное место для отдыха.
+            </p>
+            <em>Мебель, которая живет с вами.</em>
+            </div>
+        </section>
+        <section id="categories">
+            <h2>Категории</h2>
+            <div class="categories-grid">
+                <article class="category-card">
+                    <img src="img/max/tov1.webp" alt="Категория стулья">
+                    <h3>Стулья</h3>
+                    <p>Стулья на любой вкус и цвет!</p>
+                </article>
+                <article class="category-card">
+                    <img src="img/min/tov2-compressed.webp" alt="категория диваны">
+                    <h3>Диваны</h3>
+                    <p>Диваны на любой вкус и цвет!</p>
+                </article>
+                <article class="category-card">
+                    <img src="img/min/tov3-compressed.webp" alt="Категория столы">
+                    <h3>Столы</h3>
+                    <p>Столы на любой вкус и цвет!</p>
+                </article>
+                <article class="category-card">
+                    <img src="img/min/tov5-compressed.webp" alt="категория шкафы">
+                    <h3>Шкафы</h3>
+                    <p>Шкафы на любой вкус и цвет!</p>
+                </article>
+                <article class="category-card">
+                    <img src="img/min/tov3-compressed.webp" alt="Категория столы">
+                    <h3>Столы</h3>
+                    <p>Столы на любой вкус и цвет!</p>
+                </article>
+                <article class="category-card">
+                    <img src="img/min/tov5-compressed.webp" alt="категория шкафы">
+                    <h3>Шкафы</h3>
+                    <p>Шкафы на любой вкус и цвет!</p>
+                </article>
+            </div>
+        </section>
+        <section id="bestseller">
+            <h2>Хиты продаж</h2>
+            <ul><p>Топ 1</p>
+                <li><strong>Диван-кровать «Сигурд»</strong></li>
+                <li class="price">43.500₽</li>
+                <li>Модульный хит, который наши покупатели называют «диваном-хамелеоном». Днём это строгий и лаконичный скандинавский диван с глубоким сиденьем, на котором удобно смотреть кино всей семьёй.</li>
+            </ul>
+            <ul><p>Топ 2</p>
+                <li><strong>Обеденный стол «Роден»</strong></li>
+                <li class="price">25.300₽</li>
+                <li>Тяжелый, монументальный стол из цельного слэба карагача, залитый ювелирно прозрачной эпоксидной смолой. Абсолютный бестселлер для кухонь-гостиных.</li>
+            </ul>
+            <ul><p>Топ 3</p>
+                <li><strong>Рабочий стул «Атлант»</strong></li>
+                <li class="price">7.900₽</li>
+                <li>Самый продаваемый стул в категории мебели для офиса и домашних кабинетов. Мы создали его для тех, кто проводит за экраном больше четырёх часов.</li>
+            </ul>
+        </section>
+        <section id="products">
+            <h2>Наши товары</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="badge">Хит!</div>
+                    <img src="img/max/tov1.webp" alt="prod-grid1" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-title">Стул "Венский"</h3>
+                        <p class="product-description">Стул "Венский" Вес: 5.45 кг Идеально смотрится на фоне интерьера Old old school</p>
+                        <div class="product-footer">
+                            <span class="price-prod">4 500 ₽</span>
+                            <button class="buy-btn">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="img/min/tov2-compressed.webp" alt="prod-grid1" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-title">Диван "Скандинавия"</h3>
+                        <p class="product-description">Диван "Скандинавия" отлично передает дух Викингов средневековья</p>
+                        <div class="product-footer">
+                            <span class="price">60 200 ₽</span>
+                            <button class="buy-btn">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="img/min/tov3-compressed.webp" alt="prod-grid1" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-title">Стол "Дуб"</h3>
+                        <p class="product-description">Стол "Дуб" Каждый такой стол был вырезан из одного цельного дерева дуба</p>
+                        <div class="product-footer">
+                            <span class="price">53 600 ₽</span>
+                            <button class="buy-btn">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="img/min/tov5-compressed.webp" alt="prod-grid1" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-title">Шкаф "Классик"</h3>
+                        <p class="product-description">Шкай "Классик" - ничего лишнего, строгий стиль данного шкафа хорошо дополнит любой интерьер
+                        </p>
+                        <div class="product-footer">
+                            <span class="price">80 800 ₽</span>
+                            <button class="buy-btn">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        <section id="price">
+            <h2>Наши цены.</h2>
+            <div class="table-wrapper">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Наименование</th>
+                            <th scope="col">Цена</th>
+                            <th scope="col">Вес</th>
+                            <th scope="col">Действия</th>
+                        </tr>
+                    </thead>
+                    <caption>Актуальные цены на основную продукцию.</caption>
+                    <tbody>
+                        <tr>
+                            <td data-label="Наименование">Стул "Венский"</td>
+                            <td data-label="Цена">4 500 ₽</td>
+                            <td data-label="Вес">5.45 кг</td>
+                            <td data-label="Действия">
+                                <button class="order-but" aria-label="Заказать">Заказать</button>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td data-label="Наименование">Диван "Скандинавия"</td>
+                        <td data-label="Цена">60 200 ₽</td>
+                        <td data-label="Вес">137.00 кг</td>
+                        <td data-label="Действия">
+                            <button class="order-but" aria-label="Заказать">Заказать</button>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Наименование">Стол "Дуб"</td>
+                            <td data-label="Цена">53 600 ₽</td>
+                            <td data-label="Вес">78.50 кг</td>
+                            <td data-label="Действия">
+                                <button class="order-but" aria-label="Заказать">Заказать</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Наименование">Кресло "Лофт"</td>
+                            <td data-label="Цена">8 000 ₽</td>
+                            <td data-label="Вес">14.20 кг</td>
+                            <td data-label="Действия">
+                                <button class="order-but" aria-label="Заказать">Заказать</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Наименование">Шкаф "Классика"</td>
+                            <td data-label="Цена">80 800 ₽</td>
+                            <td data-label="Вес">84.30 кг</td>
+                            <td data-label="Действия">
+                                <button class="order-but" aria-label="Заказать">Заказать</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <h2>Наша продукция</h2>
+            <div class="gallery-grid">
+                <figure>
+                    <img src="img/max/tov1.webp"
+                    sizes="(max-width: 600px) 100vw, 50vw" 
+                    alt="Стул венский"
+                    loading="lazy">
+                    <figcaption>Стул "Венский" - 4 500 ₽</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/min/tov2-compressed.webp"
+                    srcset="img/max/tov2.webp"
+                    sizes="(max-width: 600px) 100vw, 50vw" 
+                    alt="Диван скандинавия"
+                    loading="lazy">
+                    <figcaption>Диван "Скандинавия" - 60 200 ₽</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/min/tov3-compressed.webp"
+                    srcset="img/max/tov3.webp"
+                    sizes="(max-width: 600px) 100vw, 50vw" 
+                    alt="Стул венский"
+                    loading="lazy">
+                    <figcaption>Стол "Дуб" - 53 600 ₽</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/min/tov4-compressed.webp"
+                    srcset="img/max/tov4.webp"
+                    sizes="(max-width: 600px) 100vw, 50vw" 
+                    alt="Диван скандинавия"
+                    loading="lazy">
+                    <figcaption>Кресло "Лофт" - 8 000 ₽</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/min/tov5-compressed.webp"
+                    srcset="img/max/tov5.webp"
+                    sizes="(max-width: 600px) 100vw, 50vw" 
+                    alt="Стул венский"
+                    loading="lazy">
+                    <figcaption>Шкаф "Классика" - 80 800 ₽</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="advantages">
+            <h2>Преимущества</h2>
+            <div class="advantages-grid">
+                <div class="advantage">
+                    <span class="advantage-icon">&#129321</span>
+                    <h3>Настоящий комфорт</h3>
+                    <p>Премиальные материалы и новейшие технологии делают нашу мебель по настощиму удобной!</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-icon">&#9889</span>
+                    <h3>Эксклюзивные коллекции</h3>
+                    <p>Регулярно выпускаем лимитированные коллекции в честь различных событий!</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-icon">&#128526</span>
+                    <h3>Умная эргономика для реальной жизни</h3>
+                    <p>Все детали эргономики были созданы учитывая реальные потребности клиентов!</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-icon">&#129323</span>
+                    <h3>Прозрачные условия</h3>
+                    <p>Честная рассрочка от 4 до 12 месяцев!</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-icon">&#128521</span>
+                    <h3>Жизнь мебели полсе покупки</h3>
+                    <p>Если после покупки мебель сломается, мы без проблем починим ее по гарантии!</p>
+                </div>
+                <div class="advantage">
+                    <span class="advantage-icon">&#128064</span>
+                    <h3>Возможность познакомиться с мебелью лично</h3>
+                    <p>Большое количество оффлайн магазинов повсей стране позволяют приехать и лично выбрать мебель!</p>
+                </div>
+            </div>
+        </section>
+        <section id="delivery">
+            <h2>Доставка и оплата</h2>
+            <div>
+                <h3>Способы доставки</h3>
+                <ul>
+                    <li>Курьером до двери</li>
+                    <li>Почта России</li>
+                    <li>CDEK</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Сроки</h3>
+                <ul>
+                    <li>Курьером от 3 дней</li>
+                    <li>Почта России от 7 дней</li>
+                    <li>CDEK от 4 дней</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Способы оплаты</h3>
+                <ul>
+                    <li>СПБ</li>
+                    <li>Картой МИР</li>
+                    <li>Наличными в магазине</li>
+                    <li>Рассрочка</li>
+                </ul>
+                <p>Бесплатная сборка</p>
+            </div>
+        </section>
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <div>
+            <h3>Где нас найти:</h3>
+            <p>г. Москва, ул. Малая Бронная, 13 (вход со двора).</p>
+            </div>
+            <div>
+            <h3>Часы работы:</h3>
+            <p> Мы открыты ежедневно с 11:00 до 21:00.</p>
+            </div>
+            <div>
+            <h3>Свяжитесь с нами:</h3>
+            <p>Телефон: +7 920-665-56-76</p>
+            <p>Email: 13stul@gmail.com</p>
+            <p>Мы в соц. сетях: <a href="">VK</a> <a href="">Telegram</a></p>
+            </div>
+            <div>
+            <h3>Реквизиты:</h3>
+            <p>OOO "ТринадцатьСтульев" 
+            <p>ИНН: 34872537</p>
+            </div>
+        </section>
+    </main>
+    <aside class="sidebar">
+        <h3>Фильтры</h3>
+        <ul>
+            <li>Стулья</li>
+            <li>Столы</li>
+            <li>Диваны</li>
+            <li>Шкафы</li>
+        </ul>
+        <h3>Цена</h3>
+        <input type="number" name="price-filter" id="price-filter">
+        <input type="number" name="price-filter" id="price-filter">
+        <button class="filter-btn">Применить</button>
+    </aside>
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>Контакты и списки с адресом, телефоном, email</h3>
+
+            </div>
+            <div class="footer-col">
+                <h3>Категории и список ссылок на категории</h3>
+                <a href="#categories">Стулья</a>
+                <a href="#categories">Столы</a>
+                <a href="#categories">Диваны</a>
+                <a href="#categories">Шкафы</a>
+            </div>
+            <div class="footer-col">
+                <h3>Мы в соцсетях и список ссылок на соцсети</h3>
+                <a href="https://vk.ru/">VK</a>
+                <a href="https://telegram.org/">Telegram</a>
+            </div>
+        </div>
+        <p>© 2026 Мебельный магазин «13 стульев»</p>
+    </footer>
+    <a href="#top" class="back-to-top" aria-label="Наверх">↑</a>
+    <script src="js/main.js" type="module" defer></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" type="module" defer></script>
+</head>
+<body>
+    <header> 
+        <h1>13 стульев — калькулятор заказа</h1> 
+    </header> 
+ 
+    <main> 
+        <section id="filters"> 
+            <input id="search" placeholder="Поиск по названию"> 
+            <select id="category-filter"> 
+                <option value="all">Все категории</option> 
+                <option value="chairs">Стулья</option> 
+                <option value="tables">Столы</option> 
+                <option value="sofas">Диваны</option> 
+            </select> 
+            <select id="sort"> 
+                <option value="default">Без сортировки</option> 
+                <option value="price-asc">Цена ↑</option> 
+                <option value="price-desc">Цена ↓</option> 
+                <option value="name-asc">Название A–Z</option> 
+            </select> 
+        </section> 
+ 
+        <section id="catalog"> 
+            <h2>Каталог</h2> 
+            <div id="status"></div> 
+            <ul id="product-list"></ul> 
+        </section> 
+ 
+        <section id="cart"> 
+            <h2>Корзина</h2> 
+            <ul id="cart-list"></ul> 
+            <p id="cart-total"></p> 
+            <button id="clear-cart">Очистить корзину</button> 
+        </section> 
+    </main>
+</body>
+</html>
