@@ -1,6 +1,6 @@
 "use string";
 
-export default function formatPrice(amount){
+export function formatPrice(amount){
 
     if(typeof amount !== 'number') {
 

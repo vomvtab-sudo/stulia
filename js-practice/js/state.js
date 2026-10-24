@@ -14,7 +14,7 @@ export {state};
 
 function addTOCart(productid){
 
-    const existingIndex = state.cart.findIndex(item => item.id === productId);
+    const existingIndex = state.cart.findIndex(item => item.id === productid);
 
     if(existingIndex > -1) {
 

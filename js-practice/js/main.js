@@ -629,3 +629,21 @@ import { applyFilter, applySort, applySearch, getVisibleProducts } from './logic
 import { fetchProducts } from './api.js';
 
 import { formatProduct, formatCartItem,  } from './format.js';
+
+async function init() {
+    setStatus('Load prod...');
+
+    const products = await fetchProducts();
+    state.products = products;
+
+
+    loadCart();
+
+    renderProducts(getVisibleProducts(state));
+
+    renderCart(state.cart);
+
+    setStatus('');
+}
+
+init();

@@ -1,7 +1,7 @@
 "use strict";
 
-import { formatPrice } from "./format";
-import { addTOCart, getCartTotal, removeFromCart } from "./state";
+import { formatPrice } from "./format.js";
+import { addTOCart, getCartTotal, removeFromCart } from "./state.js";
 import { getVisibleProducts } from "./logic.js";
 
 export function renderProducts(products){
@@ -87,11 +87,12 @@ export function renderCart(cart){
         but.textContent = 'Удалить';
 
         but.addEventListener('click', removeFromCart(item.id));
-
+        li.append(infoEl, priceEl, but);
+        cartList.append(li);
+        
     });
 
-    li.append(infoEl, priceEl, but);
-    cartList.append(li);
+    
 
     cartTotalEl.textContent = formatPrice(getCartTotal());
 
