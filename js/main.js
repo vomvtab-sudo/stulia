@@ -586,3 +586,46 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
 .catch(error => console.log(error.name));
 
 */
+
+
+// ||||||||||||||||||||||| 10 практика |||||||||||||||||||||||
+
+
+/*
+const btn = document.getElementById('btn-test');
+const span = document.getElementById('span-test');
+const div = document.getElementById('DOM-prak');
+
+btn.addEventListener('click', event => {
+
+    const res = event.target;
+    console.log(res);
+
+});
+
+const btn2 = document.createElement('button');
+btn2.classList = 'btn-test2';
+btn2.textContent = 'click me!!!';
+div.append(btn2);
+
+*/
+
+// ||||||||||||||||||||||| 11 практика |||||||||||||||||||||||
+
+
+import {state} from './state.js';
+import { 
+    addTOCart, 
+    removeFromCart, 
+    clearCart, 
+    getCartTotal, 
+    saveCart, 
+    loadCart } from './state.js';
+
+import { renderProducts, renderCart, renderAll, setStatus } from './render.js';
+
+import { applyFilter, applySort, applySearch, getVisibleProducts } from './logic.js';
+
+import { fetchProducts } from './api.js';
+
+import { formatProduct, formatCartItem,  } from './format.js';
