@@ -611,3 +611,21 @@ div.append(btn2);
 */
 
 // ||||||||||||||||||||||| 11 практика |||||||||||||||||||||||
+
+
+import {state} from './state.js';
+import { 
+    addTOCart, 
+    removeFromCart, 
+    clearCart, 
+    getCartTotal, 
+    saveCart, 
+    loadCart } from './state.js';
+
+import { renderProducts, renderCart, renderAll, setStatus } from './render.js';
+
+import { applyFilter, applySort, applySearch, getVisibleProducts } from './logic.js';
+
+import { fetchProducts } from './api.js';
+
+import { formatProduct, formatCartItem,  } from './format.js';
